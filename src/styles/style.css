@@ -1,0 +1,293 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Satisfy&display=swap');
+
+:root {
+    --bg: #010103;
+    --corPreta: #232323;
+    --corBege: #CD9962;
+    --corBranca: #F2F1F1;
+    --border: 0.1rem solid rgba(255,255,255,0.3);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    text-decoration: none;
+    transition: 0.2s linear;
+    font-family: "Open Sans", serif;
+}
+
+body {
+    background-color: var(--corBranca);
+}
+
+section {
+    padding: 3rem 2rem;
+    margin: 0 auto;
+    max-width: 1300px;
+}
+
+.title {
+    font-family: "Satisfy", cursive;
+    font-size: 2.5rem;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 99;
+    border-bottom: var(--border);
+    background-color: var(--corPreta);
+}
+
+.header section {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 2.5rem 0;
+}
+
+.logo {
+    font-family: "Satisfy", cursive;
+    font-size: 2rem;
+    color: var(--corBranca);
+}
+
+.navbar a {
+    margin: 0 1rem;
+    font-size: 1rem;
+    color: var(--corBranca);
+}
+
+.navbar a:hover {
+    color: var(--corBege);
+    border-bottom: 0.125rem solid var(--corBege);
+    padding-bottom: 0.3rem;
+    font-size: 1.1rem;
+}
+
+.home-container {
+    background: url(../images/home.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.home-container section {
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.content {
+    max-width: 30rem;
+}
+
+.content h2 {
+    font-size: 3rem;
+    padding: 2rem 0;
+}
+
+.content span {
+    font-size: 1.2rem;
+}
+
+.content p {
+    padding: 2rem 0;
+}
+
+.about {
+    height: 700px;
+    display: flex;
+    align-items: center;
+}
+
+.about h2 {
+    padding: 3rem 0;
+}
+
+.about span {
+    line-height: 1.8rem;
+}
+
+.about .chef img {
+    height: 360px;
+    padding-left: 5rem;
+}
+
+.education-container {
+    background-color: var(--corPreta);
+}
+
+.education-container .education h2 {
+    color: var(--corBege);
+    text-align: center;
+}
+
+.education-container .education .row {
+    display: flex;
+    align-items: center;
+    color: var(--corBranca);
+    text-align: center;
+}
+
+.education-container .education .row .box {
+    padding: 3rem 1.5rem;
+}
+
+.education-container .education .row .box h3 {
+    font-size: 0.938rem;
+}
+
+.education-container .education .row .box span {
+    color: var(--corBege);
+    font-size: 0.938rem;
+    line-height: 2rem
+}
+
+.fundo-work {
+    background: url(../images/fundo-work.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.work h2 {
+    text-align: center;
+    color: var(--corBranca);
+}
+
+.work-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+}
+
+.work-container .box {
+    padding-top: 1rem;
+}
+
+.work-container .box img {
+    height: 200px;
+    border: var(--border);
+    border-radius: 8px;
+}
+
+.experience h2 {
+    text-align: center;
+}
+
+.experience-container {
+    display: flex;
+    align-items: center;
+    padding: 2rem 0;
+    gap: 2rem;
+}
+
+.experience-container .function h3 span {
+    color: var(--corBege);
+}
+
+.experience-container .function ul li {
+    padding: 0.5rem 2rem;
+}
+
+.experience-container .time ul li {
+    padding: 0.5rem 2rem;
+}
+
+.skills-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5rem;
+    padding: 5rem;
+}
+
+.box-skills h3 {
+    font-size: 1.4rem;
+}
+
+.box-skills ul li {
+    padding: 0.3rem 2rem;
+}
+
+.fundo-contact {
+    background-color: var(--corPreta);
+}
+
+.contact h2 {
+    text-align: center;
+    color: var(--corBranca);
+}
+
+.contact-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 40px);
+    margin-top: -140px;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 600px;
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 5px;
+    width: 100%; /* Ajusta ao tamanho do formulário */
+    text-align: left;
+    color: var(--corBranca);
+}
+
+.contact-form input {
+    width: 100%; /* Ocupa toda a largura do formulário */
+    padding: 18px;
+    margin-bottom: 15px;
+    border: none;
+
+}
+
+.contact-form #message {
+    height: 130px; /* Ajusta a altura do campo de mensagem */
+}
+
+.contact-form button {
+    background-color: var(--corBege);
+    border: none;
+    cursor: pointer;
+    width: 150px;
+    height: 50px;
+    margin-top: 10px; /* Espaço entre o botão e o campo */
+    color: var(--corBranca);
+    font-weight: 620;
+}
+
+.contact-form button:hover {
+    width: 155px;
+    font-size: 1rem;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+}
+
+.footer-container .box-footer h3 {
+    font-size: 1.8rem;
+}
+
+.footer-container .box-footer ul {
+    list-style: none;
+}
+
+.footer-container .box-footer ul li a {
+    color: var(--corPreta);
+    line-height: 3rem;
+}
